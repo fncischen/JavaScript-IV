@@ -40,9 +40,9 @@ class Student extends Person {
     }
 
     listSubjects() {
-        favSubjects.foreach(function(element) {
-           return element; 
-        });
+        for(let i = 0; i < this.favSubjects.length; i++) {
+            console.log(this.favSubjects[i]);
+        };
     };
 
     PRAssignment(subject) {
@@ -119,3 +119,4 @@ console.log(Joe.debugsCode(Suzy, "DS10")) //?
 console.log(Suzy.speak()); //?
 console.log(Suzy.PRAssignment("DS10")); //?
 console.log(Suzy.sprintChallenge("DS10")); //?
+console.log(Suzy.listSubjects()); //? 
